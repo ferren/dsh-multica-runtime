@@ -4,6 +4,8 @@ Private, out-of-tree DeepSeek Harness runtime bridge for Multica. It exposes a
 versioned JSONL protocol over stdio and composes over `@deepseek-ai/dsh-base`.
 It does not require changes to the DeepSeek Harness repository.
 
+![DeepSeek Harness runtime online in Multica](docs/images/multica-dsh-runtime.png)
+
 ## Privacy
 
 - This repository contains only the Multica integration layer. It does not
