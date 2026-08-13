@@ -1,8 +1,9 @@
 # Multica DSH Runtime
 
-Private, out-of-tree DeepSeek Harness runtime bridge for Multica. It exposes a
-versioned JSONL protocol over stdio and composes over `@deepseek-ai/dsh-base`.
-It does not require changes to the DeepSeek Harness repository.
+Private, out-of-tree runtime bridge between Multica and the public
+[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness). It exposes
+a versioned JSONL protocol over stdio and composes over
+`@deepseek-ai/dsh-base`. It does not require changes to DeepSeek Harness.
 
 ![DeepSeek Harness runtime online in Multica](docs/images/multica-dsh-runtime.png)
 
@@ -16,10 +17,9 @@ It does not require changes to the DeepSeek Harness repository.
 
 ## Local development
 
-The DSH packages used by this plugin are declared by package name and version.
-Until those packages are published, resolve them through a private local
-workspace override. Keep that machine-specific configuration out of this
-repository.
+The DSH packages used by this plugin are public npm packages. This checkout is
+currently validated against `@deepseek-ai/dsh@0.1.0-rc.6` and its matching
+`@deepseek-ai/dsh-*` package family.
 
 ```bash
 pnpm install

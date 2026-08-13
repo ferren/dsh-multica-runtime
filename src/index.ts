@@ -35,7 +35,7 @@ import { installMulticaTerminalEnvironment } from './environment.js'
 export const name = 'multica-dsh-runtime'
 export const inject = ['cmdlineArgs', 'agents', 'agentDefaultModel', 'sessions', 'llm']
 
-const PLUGIN_VERSION = '0.1.0-private.0'
+const PLUGIN_VERSION = '0.1.0-private.1'
 
 interface ActiveRun {
   command: ExecuteCommand
