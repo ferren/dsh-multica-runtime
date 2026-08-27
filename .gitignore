@@ -9,3 +9,5 @@ coverage/
 *.log
 *.key
 *.pem
+.pc/
+*.patch~
